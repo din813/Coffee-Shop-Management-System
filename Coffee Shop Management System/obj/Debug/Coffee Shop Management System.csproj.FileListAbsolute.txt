@@ -1,0 +1,15 @@
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\bin\Debug\Coffee Shop Management System.exe.config
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\bin\Debug\Coffee Shop Management System.exe
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\bin\Debug\Coffee Shop Management System.pdb
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee Shop Management System.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Form1.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.SignIn_Form.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Waiter_Information.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee Shop Management System.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee Shop Management System.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee Shop Management System.exe
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee Shop Management System.pdb
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Menu_and_Billing_System.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Register_Form.resources
+C:\Users\Lenovo\source\repos\Coffee Shop Management System\Coffee Shop Management System\obj\Debug\Coffee_Shop_Management_System.Salesman_Information.resources
