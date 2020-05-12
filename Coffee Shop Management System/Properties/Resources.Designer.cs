@@ -63,9 +63,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _135_1359830_custom_european_style_leisure_coffee_shop_themed_restaurant {
+        internal static System.Drawing.Bitmap admin_page {
             get {
-                object obj = ResourceManager.GetObject("135-1359830_custom-european-style-leisure-coffee-shop-themed-restaurant", resourceCulture);
+                object obj = ResourceManager.GetObject("admin page", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _135_1359830_custom_european_style_leisure_coffee_shop_themed_restaurant1 {
+        internal static System.Drawing.Bitmap admin_page1 {
             get {
-                object obj = ResourceManager.GetObject("135-1359830_custom-european-style-leisure-coffee-shop-themed-restaurant1", resourceCulture);
+                object obj = ResourceManager.GetObject("admin page1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ffcca63ccc18e51b5576069de1598e84 {
+        internal static System.Drawing.Bitmap admin_page2 {
             get {
-                object obj = ResourceManager.GetObject("ffcca63ccc18e51b5576069de1598e84", resourceCulture);
+                object obj = ResourceManager.GetObject("admin page2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rBVaVl068rSAF0lDAAhILUuqrBk016 {
+        internal static System.Drawing.Bitmap registration {
             get {
-                object obj = ResourceManager.GetObject("rBVaVl068rSAF0lDAAhILUuqrBk016", resourceCulture);
+                object obj = ResourceManager.GetObject("registration", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rBVaVl068rSAF0lDAAhILUuqrBk016__1_ {
+        internal static System.Drawing.Bitmap registration1 {
             get {
-                object obj = ResourceManager.GetObject("rBVaVl068rSAF0lDAAhILUuqrBk016 (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("registration1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Coffee_Shop_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rBVaWV068rSAB01vAAotua8JpAA220 {
+        internal static System.Drawing.Bitmap welcome {
             get {
-                object obj = ResourceManager.GetObject("rBVaWV068rSAB01vAAotua8JpAA220", resourceCulture);
+                object obj = ResourceManager.GetObject("welcome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

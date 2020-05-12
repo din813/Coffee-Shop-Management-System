@@ -29,168 +29,241 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblsid = new System.Windows.Forms.Label();
+            this.lblsphone = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.back = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.Button();
-            this.addsal = new System.Windows.Forms.Button();
-            this.removesal = new System.Windows.Forms.Button();
-            this.updatesal = new System.Windows.Forms.Button();
-            this.displaysal = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnsinsert = new System.Windows.Forms.Button();
+            this.btnsremove = new System.Windows.Forms.Button();
+            this.btnsupdate = new System.Windows.Forms.Button();
+            this.btnsreset = new System.Windows.Forms.Button();
+            this.lblsname = new System.Windows.Forms.Label();
+            this.lblsgender = new System.Windows.Forms.Label();
+            this.lblsdob = new System.Windows.Forms.Label();
+            this.lblsaddress = new System.Windows.Forms.Label();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.dateTimePickerdob = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxgender = new System.Windows.Forms.ComboBox();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.gvsalesman = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gvsalesman)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(332, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 13);
+            this.label1.Size = new System.Drawing.Size(208, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "SALESMAN INFORMATION";
             // 
-            // label2
+            // lblsid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID :";
+            this.lblsid.AutoSize = true;
+            this.lblsid.Location = new System.Drawing.Point(119, 59);
+            this.lblsid.Name = "lblsid";
+            this.lblsid.Size = new System.Drawing.Size(24, 13);
+            this.lblsid.TabIndex = 1;
+            this.lblsid.Text = "ID :";
             // 
-            // label3
+            // lblsphone
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Name :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 148);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Phone No : ";
+            this.lblsphone.AutoSize = true;
+            this.lblsphone.Location = new System.Drawing.Point(119, 122);
+            this.lblsphone.Name = "lblsphone";
+            this.lblsphone.Size = new System.Drawing.Size(64, 13);
+            this.lblsphone.TabIndex = 3;
+            this.lblsphone.Text = "Phone No : ";
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(236, 62);
+            this.txtid.Location = new System.Drawing.Point(189, 59);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 20);
+            this.txtid.Size = new System.Drawing.Size(142, 20);
             this.txtid.TabIndex = 4;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(236, 102);
+            this.txtname.Location = new System.Drawing.Point(189, 90);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(100, 20);
+            this.txtname.Size = new System.Drawing.Size(142, 20);
             this.txtname.TabIndex = 5;
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(236, 141);
+            this.txtphone.Location = new System.Drawing.Point(189, 122);
             this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(100, 20);
+            this.txtphone.Size = new System.Drawing.Size(142, 20);
             this.txtphone.TabIndex = 6;
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 404);
+            this.back.Location = new System.Drawing.Point(12, 415);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
             this.back.TabIndex = 7;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
-            // search
+            // btnsinsert
             // 
-            this.search.Location = new System.Drawing.Point(613, 48);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(75, 23);
-            this.search.TabIndex = 8;
-            this.search.Text = "Search";
-            this.search.UseVisualStyleBackColor = true;
+            this.btnsinsert.Location = new System.Drawing.Point(685, 90);
+            this.btnsinsert.Name = "btnsinsert";
+            this.btnsinsert.Size = new System.Drawing.Size(75, 23);
+            this.btnsinsert.TabIndex = 9;
+            this.btnsinsert.Text = "Insert";
+            this.btnsinsert.UseVisualStyleBackColor = true;
+            this.btnsinsert.Click += new System.EventHandler(this.btnsinsert_Click);
             // 
-            // addsal
+            // btnsremove
             // 
-            this.addsal.Location = new System.Drawing.Point(613, 88);
-            this.addsal.Name = "addsal";
-            this.addsal.Size = new System.Drawing.Size(75, 23);
-            this.addsal.TabIndex = 9;
-            this.addsal.Text = "Add";
-            this.addsal.UseVisualStyleBackColor = true;
+            this.btnsremove.Location = new System.Drawing.Point(685, 162);
+            this.btnsremove.Name = "btnsremove";
+            this.btnsremove.Size = new System.Drawing.Size(75, 23);
+            this.btnsremove.TabIndex = 10;
+            this.btnsremove.Text = "Remove";
+            this.btnsremove.UseVisualStyleBackColor = true;
+            this.btnsremove.Click += new System.EventHandler(this.btnsremove_Click);
             // 
-            // removesal
+            // btnsupdate
             // 
-            this.removesal.Location = new System.Drawing.Point(613, 117);
-            this.removesal.Name = "removesal";
-            this.removesal.Size = new System.Drawing.Size(75, 23);
-            this.removesal.TabIndex = 10;
-            this.removesal.Text = "Remove";
-            this.removesal.UseVisualStyleBackColor = true;
+            this.btnsupdate.Location = new System.Drawing.Point(685, 122);
+            this.btnsupdate.Name = "btnsupdate";
+            this.btnsupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnsupdate.TabIndex = 11;
+            this.btnsupdate.Text = "Update";
+            this.btnsupdate.UseVisualStyleBackColor = true;
+            this.btnsupdate.Click += new System.EventHandler(this.btnsupdate_Click);
             // 
-            // updatesal
+            // btnsreset
             // 
-            this.updatesal.Location = new System.Drawing.Point(613, 159);
-            this.updatesal.Name = "updatesal";
-            this.updatesal.Size = new System.Drawing.Size(75, 23);
-            this.updatesal.TabIndex = 11;
-            this.updatesal.Text = "Update";
-            this.updatesal.UseVisualStyleBackColor = true;
+            this.btnsreset.Location = new System.Drawing.Point(685, 200);
+            this.btnsreset.Name = "btnsreset";
+            this.btnsreset.Size = new System.Drawing.Size(75, 23);
+            this.btnsreset.TabIndex = 12;
+            this.btnsreset.Text = "Reset";
+            this.btnsreset.UseVisualStyleBackColor = true;
+            this.btnsreset.Click += new System.EventHandler(this.btnsreset_Click);
             // 
-            // displaysal
+            // lblsname
             // 
-            this.displaysal.Location = new System.Drawing.Point(613, 200);
-            this.displaysal.Name = "displaysal";
-            this.displaysal.Size = new System.Drawing.Size(75, 23);
-            this.displaysal.TabIndex = 12;
-            this.displaysal.Text = "Display";
-            this.displaysal.UseVisualStyleBackColor = true;
+            this.lblsname.AutoSize = true;
+            this.lblsname.Location = new System.Drawing.Point(119, 88);
+            this.lblsname.Name = "lblsname";
+            this.lblsname.Size = new System.Drawing.Size(41, 13);
+            this.lblsname.TabIndex = 2;
+            this.lblsname.Text = "Name :";
             // 
-            // tableLayoutPanel1
+            // lblsgender
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.92226F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.07774F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(67, 186);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.77612F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.22388F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(492, 100);
-            this.tableLayoutPanel1.TabIndex = 13;
+            this.lblsgender.AutoSize = true;
+            this.lblsgender.Location = new System.Drawing.Point(380, 59);
+            this.lblsgender.Name = "lblsgender";
+            this.lblsgender.Size = new System.Drawing.Size(48, 13);
+            this.lblsgender.TabIndex = 13;
+            this.lblsgender.Text = "Gender :";
+            // 
+            // lblsdob
+            // 
+            this.lblsdob.AutoSize = true;
+            this.lblsdob.Location = new System.Drawing.Point(357, 88);
+            this.lblsdob.Name = "lblsdob";
+            this.lblsdob.Size = new System.Drawing.Size(74, 13);
+            this.lblsdob.TabIndex = 14;
+            this.lblsdob.Text = "Date Of Birth :";
+            // 
+            // lblsaddress
+            // 
+            this.lblsaddress.AutoSize = true;
+            this.lblsaddress.Location = new System.Drawing.Point(377, 122);
+            this.lblsaddress.Name = "lblsaddress";
+            this.lblsaddress.Size = new System.Drawing.Size(51, 13);
+            this.lblsaddress.TabIndex = 16;
+            this.lblsaddress.Text = "Address :";
+            // 
+            // txtaddress
+            // 
+            this.txtaddress.Location = new System.Drawing.Point(437, 122);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(200, 20);
+            this.txtaddress.TabIndex = 19;
+            // 
+            // dateTimePickerdob
+            // 
+            this.dateTimePickerdob.CustomFormat = " ";
+            this.dateTimePickerdob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerdob.Location = new System.Drawing.Point(437, 87);
+            this.dateTimePickerdob.Name = "dateTimePickerdob";
+            this.dateTimePickerdob.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerdob.TabIndex = 21;
+            this.dateTimePickerdob.ValueChanged += new System.EventHandler(this.txtdob_ValueChanged);
+            // 
+            // comboBoxgender
+            // 
+            this.comboBoxgender.FormattingEnabled = true;
+            this.comboBoxgender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxgender.Location = new System.Drawing.Point(437, 60);
+            this.comboBoxgender.Name = "comboBoxgender";
+            this.comboBoxgender.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxgender.TabIndex = 22;
+            // 
+            // btnexit
+            // 
+            this.btnexit.Location = new System.Drawing.Point(704, 415);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 23;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // gvsalesman
+            // 
+            this.gvsalesman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvsalesman.Location = new System.Drawing.Point(56, 162);
+            this.gvsalesman.Name = "gvsalesman";
+            this.gvsalesman.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gvsalesman.Size = new System.Drawing.Size(618, 247);
+            this.gvsalesman.TabIndex = 24;
+            this.gvsalesman.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvsalesman_CellClick);
             // 
             // Salesman_Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.displaysal);
-            this.Controls.Add(this.updatesal);
-            this.Controls.Add(this.removesal);
-            this.Controls.Add(this.addsal);
-            this.Controls.Add(this.search);
+            this.Controls.Add(this.gvsalesman);
+            this.Controls.Add(this.btnexit);
+            this.Controls.Add(this.comboBoxgender);
+            this.Controls.Add(this.dateTimePickerdob);
+            this.Controls.Add(this.txtaddress);
+            this.Controls.Add(this.lblsaddress);
+            this.Controls.Add(this.lblsdob);
+            this.Controls.Add(this.lblsgender);
+            this.Controls.Add(this.btnsreset);
+            this.Controls.Add(this.btnsupdate);
+            this.Controls.Add(this.btnsremove);
+            this.Controls.Add(this.btnsinsert);
             this.Controls.Add(this.back);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtid);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblsphone);
+            this.Controls.Add(this.lblsname);
+            this.Controls.Add(this.lblsid);
             this.Controls.Add(this.label1);
             this.Name = "Salesman_Information";
             this.Text = "Salesman_Information";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Salesman_Information_FormClosed);
+            this.Load += new System.EventHandler(this.Salesman_Information_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvsalesman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,18 +272,25 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblsid;
+        private System.Windows.Forms.Label lblsphone;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button search;
-        private System.Windows.Forms.Button addsal;
-        private System.Windows.Forms.Button removesal;
-        private System.Windows.Forms.Button updatesal;
-        private System.Windows.Forms.Button displaysal;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnsinsert;
+        private System.Windows.Forms.Button btnsremove;
+        private System.Windows.Forms.Button btnsupdate;
+        private System.Windows.Forms.Button btnsreset;
+        private System.Windows.Forms.Label lblsname;
+        private System.Windows.Forms.Label lblsgender;
+        private System.Windows.Forms.Label lblsdob;
+        private System.Windows.Forms.Label lblsaddress;
+        private System.Windows.Forms.TextBox txtaddress;
+       // private System.Windows.Forms.DataGridView gvsales;
+        private System.Windows.Forms.DateTimePicker dateTimePickerdob;
+        private System.Windows.Forms.ComboBox comboBoxgender;
+        private System.Windows.Forms.Button btnexit;
+        private System.Windows.Forms.DataGridView gvsalesman;
     }
 }

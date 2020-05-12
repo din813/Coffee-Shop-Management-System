@@ -28,170 +28,242 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.displayw = new System.Windows.Forms.Button();
-            this.updatew = new System.Windows.Forms.Button();
-            this.removew = new System.Windows.Forms.Button();
-            this.addw = new System.Windows.Forms.Button();
-            this.searchw = new System.Windows.Forms.Button();
+            this.gvwaiter = new System.Windows.Forms.DataGridView();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.lblwaddress = new System.Windows.Forms.Label();
+            this.lblwdob = new System.Windows.Forms.Label();
+            this.lblwgender = new System.Windows.Forms.Label();
+            this.btnwreset = new System.Windows.Forms.Button();
+            this.btnwupdate = new System.Windows.Forms.Button();
+            this.btnwremove = new System.Windows.Forms.Button();
+            this.btnwinsert = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.txtphone = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtid = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblwphone = new System.Windows.Forms.Label();
+            this.lblwname = new System.Windows.Forms.Label();
+            this.lblwid = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxgender = new System.Windows.Forms.ComboBox();
+            this.btnexit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gvwaiter)).BeginInit();
             this.SuspendLayout();
             // 
-            // displayw
+            // gvwaiter
             // 
-            this.displayw.Location = new System.Drawing.Point(663, 205);
-            this.displayw.Name = "displayw";
-            this.displayw.Size = new System.Drawing.Size(75, 23);
-            this.displayw.TabIndex = 25;
-            this.displayw.Text = "Display";
-            this.displayw.UseVisualStyleBackColor = true;
+            this.gvwaiter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvwaiter.Location = new System.Drawing.Point(33, 196);
+            this.gvwaiter.Name = "gvwaiter";
+            this.gvwaiter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gvwaiter.Size = new System.Drawing.Size(632, 150);
+            this.gvwaiter.TabIndex = 39;
+            this.gvwaiter.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvwaiter_CellClick);
             // 
-            // updatew
+            // txtaddress
             // 
-            this.updatew.Location = new System.Drawing.Point(663, 164);
-            this.updatew.Name = "updatew";
-            this.updatew.Size = new System.Drawing.Size(75, 23);
-            this.updatew.TabIndex = 24;
-            this.updatew.Text = "Update";
-            this.updatew.UseVisualStyleBackColor = true;
+            this.txtaddress.Location = new System.Drawing.Point(447, 131);
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(200, 20);
+            this.txtaddress.TabIndex = 38;
             // 
-            // removew
+            // lblwaddress
             // 
-            this.removew.Location = new System.Drawing.Point(663, 122);
-            this.removew.Name = "removew";
-            this.removew.Size = new System.Drawing.Size(75, 23);
-            this.removew.TabIndex = 23;
-            this.removew.Text = "Remove";
-            this.removew.UseVisualStyleBackColor = true;
+            this.lblwaddress.AutoSize = true;
+            this.lblwaddress.Location = new System.Drawing.Point(378, 131);
+            this.lblwaddress.Name = "lblwaddress";
+            this.lblwaddress.Size = new System.Drawing.Size(51, 13);
+            this.lblwaddress.TabIndex = 35;
+            this.lblwaddress.Text = "Address :";
             // 
-            // addw
+            // lblwdob
             // 
-            this.addw.Location = new System.Drawing.Point(663, 93);
-            this.addw.Name = "addw";
-            this.addw.Size = new System.Drawing.Size(75, 23);
-            this.addw.TabIndex = 22;
-            this.addw.Text = "Add";
-            this.addw.UseVisualStyleBackColor = true;
+            this.lblwdob.AutoSize = true;
+            this.lblwdob.Location = new System.Drawing.Point(358, 97);
+            this.lblwdob.Name = "lblwdob";
+            this.lblwdob.Size = new System.Drawing.Size(74, 13);
+            this.lblwdob.TabIndex = 34;
+            this.lblwdob.Text = "Date Of Birth :";
             // 
-            // searchw
+            // lblwgender
             // 
-            this.searchw.Location = new System.Drawing.Point(663, 53);
-            this.searchw.Name = "searchw";
-            this.searchw.Size = new System.Drawing.Size(75, 23);
-            this.searchw.TabIndex = 21;
-            this.searchw.Text = "Search";
-            this.searchw.UseVisualStyleBackColor = true;
+            this.lblwgender.AutoSize = true;
+            this.lblwgender.Location = new System.Drawing.Point(381, 68);
+            this.lblwgender.Name = "lblwgender";
+            this.lblwgender.Size = new System.Drawing.Size(48, 13);
+            this.lblwgender.TabIndex = 33;
+            this.lblwgender.Text = "Gender :";
+            // 
+            // btnwreset
+            // 
+            this.btnwreset.Location = new System.Drawing.Point(686, 209);
+            this.btnwreset.Name = "btnwreset";
+            this.btnwreset.Size = new System.Drawing.Size(75, 23);
+            this.btnwreset.TabIndex = 32;
+            this.btnwreset.Text = "Reset";
+            this.btnwreset.UseVisualStyleBackColor = true;
+            this.btnwreset.Click += new System.EventHandler(this.btnwreset_Click);
+            // 
+            // btnwupdate
+            // 
+            this.btnwupdate.Location = new System.Drawing.Point(686, 131);
+            this.btnwupdate.Name = "btnwupdate";
+            this.btnwupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnwupdate.TabIndex = 31;
+            this.btnwupdate.Text = "Update";
+            this.btnwupdate.UseVisualStyleBackColor = true;
+            this.btnwupdate.Click += new System.EventHandler(this.btnwupdate_Click);
+            // 
+            // btnwremove
+            // 
+            this.btnwremove.Location = new System.Drawing.Point(686, 171);
+            this.btnwremove.Name = "btnwremove";
+            this.btnwremove.Size = new System.Drawing.Size(75, 23);
+            this.btnwremove.TabIndex = 30;
+            this.btnwremove.Text = "Remove";
+            this.btnwremove.UseVisualStyleBackColor = true;
+            this.btnwremove.Click += new System.EventHandler(this.btnwremove_Click);
+            // 
+            // btnwinsert
+            // 
+            this.btnwinsert.Location = new System.Drawing.Point(686, 99);
+            this.btnwinsert.Name = "btnwinsert";
+            this.btnwinsert.Size = new System.Drawing.Size(75, 23);
+            this.btnwinsert.TabIndex = 29;
+            this.btnwinsert.Text = "Insert";
+            this.btnwinsert.UseVisualStyleBackColor = true;
+            this.btnwinsert.Click += new System.EventHandler(this.btnwinsert_Click);
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(62, 409);
+            this.back.Location = new System.Drawing.Point(12, 415);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 20;
+            this.back.TabIndex = 28;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(286, 146);
+            this.txtphone.Location = new System.Drawing.Point(190, 131);
             this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(100, 20);
-            this.txtphone.TabIndex = 19;
+            this.txtphone.Size = new System.Drawing.Size(142, 20);
+            this.txtphone.TabIndex = 27;
             // 
             // txtname
             // 
-            this.txtname.Location = new System.Drawing.Point(286, 107);
+            this.txtname.Location = new System.Drawing.Point(190, 99);
             this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(100, 20);
-            this.txtname.TabIndex = 18;
+            this.txtname.Size = new System.Drawing.Size(142, 20);
+            this.txtname.TabIndex = 26;
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(286, 67);
+            this.txtid.Location = new System.Drawing.Point(190, 68);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 20);
-            this.txtid.TabIndex = 17;
+            this.txtid.Size = new System.Drawing.Size(142, 20);
+            this.txtid.TabIndex = 25;
             // 
-            // label4
+            // lblwphone
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Phone No : ";
+            this.lblwphone.AutoSize = true;
+            this.lblwphone.Location = new System.Drawing.Point(120, 131);
+            this.lblwphone.Name = "lblwphone";
+            this.lblwphone.Size = new System.Drawing.Size(64, 13);
+            this.lblwphone.TabIndex = 24;
+            this.lblwphone.Text = "Phone No : ";
             // 
-            // label3
+            // lblwname
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(166, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Name :";
+            this.lblwname.AutoSize = true;
+            this.lblwname.Location = new System.Drawing.Point(120, 97);
+            this.lblwname.Name = "lblwname";
+            this.lblwname.Size = new System.Drawing.Size(41, 13);
+            this.lblwname.TabIndex = 23;
+            this.lblwname.Text = "Name :";
             // 
-            // label2
+            // lblwid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(166, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "ID :";
+            this.lblwid.AutoSize = true;
+            this.lblwid.Location = new System.Drawing.Point(120, 68);
+            this.lblwid.Name = "lblwid";
+            this.lblwid.Size = new System.Drawing.Size(24, 13);
+            this.lblwid.TabIndex = 22;
+            this.lblwid.Text = "ID :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(382, 18);
+            this.label1.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(333, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 13);
-            this.label1.TabIndex = 13;
+            this.label1.Size = new System.Drawing.Size(187, 26);
+            this.label1.TabIndex = 21;
             this.label1.Text = "WAITER INFORMATION";
             // 
-            // tableLayoutPanel1
+            // dateTimePickerDOB
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.92226F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.07774F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(75, 205);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.77612F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.22388F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(492, 100);
-            this.tableLayoutPanel1.TabIndex = 26;
+            this.dateTimePickerDOB.CustomFormat = " ";
+            this.dateTimePickerDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(447, 97);
+            this.dateTimePickerDOB.Name = "dateTimePickerDOB";
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerDOB.TabIndex = 40;
+            this.dateTimePickerDOB.ValueChanged += new System.EventHandler(this.dateTimePickerDOB_ValueChanged);
+            // 
+            // comboBoxgender
+            // 
+            this.comboBoxgender.FormattingEnabled = true;
+            this.comboBoxgender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxgender.Location = new System.Drawing.Point(447, 68);
+            this.comboBoxgender.Name = "comboBoxgender";
+            this.comboBoxgender.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxgender.TabIndex = 41;
+            // 
+            // btnexit
+            // 
+            this.btnexit.Location = new System.Drawing.Point(713, 415);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 42;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // Waiter_Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.displayw);
-            this.Controls.Add(this.updatew);
-            this.Controls.Add(this.removew);
-            this.Controls.Add(this.addw);
-            this.Controls.Add(this.searchw);
+            this.Controls.Add(this.btnexit);
+            this.Controls.Add(this.comboBoxgender);
+            this.Controls.Add(this.dateTimePickerDOB);
+            this.Controls.Add(this.gvwaiter);
+            this.Controls.Add(this.txtaddress);
+            this.Controls.Add(this.lblwaddress);
+            this.Controls.Add(this.lblwdob);
+            this.Controls.Add(this.lblwgender);
+            this.Controls.Add(this.btnwreset);
+            this.Controls.Add(this.btnwupdate);
+            this.Controls.Add(this.btnwremove);
+            this.Controls.Add(this.btnwinsert);
             this.Controls.Add(this.back);
             this.Controls.Add(this.txtphone);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txtid);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblwphone);
+            this.Controls.Add(this.lblwname);
+            this.Controls.Add(this.lblwid);
             this.Controls.Add(this.label1);
             this.Name = "Waiter_Information";
             this.Text = "Waiter_Information";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Waiter_Information_FormClosed);
             this.Load += new System.EventHandler(this.Waiter_Information_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gvwaiter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,19 +271,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Button displayw;
-        private System.Windows.Forms.Button updatew;
-        private System.Windows.Forms.Button removew;
-        private System.Windows.Forms.Button addw;
-        private System.Windows.Forms.Button searchw;
+        private System.Windows.Forms.DataGridView gvwaiter;
+        private System.Windows.Forms.TextBox txtaddress;
+        private System.Windows.Forms.Label lblwaddress;
+        private System.Windows.Forms.Label lblwdob;
+        private System.Windows.Forms.Label lblwgender;
+        private System.Windows.Forms.Button btnwreset;
+        private System.Windows.Forms.Button btnwupdate;
+        private System.Windows.Forms.Button btnwremove;
+        private System.Windows.Forms.Button btnwinsert;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.TextBox txtphone;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblwphone;
+        private System.Windows.Forms.Label lblwname;
+        private System.Windows.Forms.Label lblwid;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDOB;
+        private System.Windows.Forms.ComboBox comboBoxgender;
+        private System.Windows.Forms.Button btnexit;
     }
 }

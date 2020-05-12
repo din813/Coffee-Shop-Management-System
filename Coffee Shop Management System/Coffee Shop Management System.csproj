@@ -50,20 +50,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Admin Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Admin Page.Designer.cs">
+      <DependentUpon>Admin Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cafe.cs" />
     <Compile Include="Menu and Billing System.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Menu and Billing System.Designer.cs">
       <DependentUpon>Menu and Billing System.cs</DependentUpon>
     </Compile>
+    <Compile Include="openFileDialog1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Register Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,22 +95,23 @@
     <Compile Include="Waiter Information.Designer.cs">
       <DependentUpon>Waiter Information.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Welcome Cafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome Cafe.Designer.cs">
+      <DependentUpon>Welcome Cafe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Page.resx">
+      <DependentUpon>Admin Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu and Billing System.resx">
       <DependentUpon>Menu and Billing System.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Register Form.resx">
       <DependentUpon>Register Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Waiter Information.resx">
       <DependentUpon>Waiter Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome Cafe.resx">
+      <DependentUpon>Welcome Cafe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,22 +141,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\135-1359830_custom-european-style-leisure-coffee-shop-themed-restaurant.jpg" />
+    <None Include="Resources\228-2282212_background-for-coffee-shop.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\135-1359830_custom-european-style-leisure-coffee-shop-themed-restaurant1.jpg" />
+    <None Include="Resources\228-2282212_background-for-coffee-shop1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rBVaWV068rSAB01vAAotua8JpAA220.jpg" />
+    <None Include="Resources\welcome.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rBVaVl068rSAF0lDAAhILUuqrBk016.jpg" />
+    <None Include="Resources\11-114122_4k-cup-of-coffee-wallpapers-hd-4k-coffee.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rBVaVl068rSAF0lDAAhILUuqrBk016 %281%29.jpg" />
+    <None Include="Resources\welcome1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ffcca63ccc18e51b5576069de1598e84.jpg" />
+    <None Include="Resources\admin page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin page1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
