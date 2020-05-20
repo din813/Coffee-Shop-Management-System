@@ -28,116 +28,148 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.signin = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.register = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.buttonsign = new System.Windows.Forms.Button();
+            this.txtmail = new System.Windows.Forms.TextBox();
+            this.labelpass = new System.Windows.Forms.Label();
+            this.labelemail = new System.Windows.Forms.Label();
+            this.labelsignin = new System.Windows.Forms.Label();
+            this.btnexit = new System.Windows.Forms.Button();
+            this.btnback = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(384, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SIGN IN";
+            this.panel1.Controls.Add(this.btnback);
+            this.panel1.Controls.Add(this.btnexit);
+            this.panel1.Controls.Add(this.txtpass);
+            this.panel1.Controls.Add(this.buttonsign);
+            this.panel1.Controls.Add(this.txtmail);
+            this.panel1.Controls.Add(this.labelpass);
+            this.panel1.Controls.Add(this.labelemail);
+            this.panel1.Controls.Add(this.labelsignin);
+            this.panel1.Location = new System.Drawing.Point(115, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(291, 370);
+            this.panel1.TabIndex = 8;
             // 
-            // label2
+            // txtpass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(175, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "E-Mail Address :";
+            this.txtpass.Location = new System.Drawing.Point(135, 133);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.Size = new System.Drawing.Size(100, 20);
+            this.txtpass.TabIndex = 6;
             // 
-            // label3
+            // buttonsign
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(178, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password :";
+            this.buttonsign.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonsign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonsign.Location = new System.Drawing.Point(160, 194);
+            this.buttonsign.Name = "buttonsign";
+            this.buttonsign.Size = new System.Drawing.Size(75, 23);
+            this.buttonsign.TabIndex = 5;
+            this.buttonsign.Text = "SignIn";
+            this.buttonsign.UseVisualStyleBackColor = true;
+            this.buttonsign.Click += new System.EventHandler(this.buttonsign_Click);
             // 
-            // signin
+            // txtmail
             // 
-            this.signin.Location = new System.Drawing.Point(441, 167);
-            this.signin.Name = "signin";
-            this.signin.Size = new System.Drawing.Size(75, 23);
-            this.signin.TabIndex = 3;
-            this.signin.Text = "Sign In";
-            this.signin.UseVisualStyleBackColor = true;
-            this.signin.Click += new System.EventHandler(this.signin_Click);
+            this.txtmail.Location = new System.Drawing.Point(136, 87);
+            this.txtmail.Name = "txtmail";
+            this.txtmail.Size = new System.Drawing.Size(100, 20);
+            this.txtmail.TabIndex = 3;
             // 
-            // back
+            // labelpass
             // 
-            this.back.Location = new System.Drawing.Point(31, 372);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 4;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
+            this.labelpass.AutoSize = true;
+            this.labelpass.BackColor = System.Drawing.Color.Transparent;
+            this.labelpass.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelpass.Location = new System.Drawing.Point(19, 133);
+            this.labelpass.Name = "labelpass";
+            this.labelpass.Size = new System.Drawing.Size(99, 25);
+            this.labelpass.TabIndex = 2;
+            this.labelpass.Text = "Password";
             // 
-            // textBox1
+            // labelemail
             // 
-            this.textBox1.Location = new System.Drawing.Point(300, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 5;
+            this.labelemail.AutoSize = true;
+            this.labelemail.BackColor = System.Drawing.Color.Transparent;
+            this.labelemail.Font = new System.Drawing.Font("Matura MT Script Capitals", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelemail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelemail.Location = new System.Drawing.Point(19, 87);
+            this.labelemail.Name = "labelemail";
+            this.labelemail.Size = new System.Drawing.Size(61, 25);
+            this.labelemail.TabIndex = 1;
+            this.labelemail.Text = "Email";
             // 
-            // textBox2
+            // labelsignin
             // 
-            this.textBox2.Location = new System.Drawing.Point(300, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(216, 20);
-            this.textBox2.TabIndex = 6;
+            this.labelsignin.AutoSize = true;
+            this.labelsignin.BackColor = System.Drawing.Color.Transparent;
+            this.labelsignin.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelsignin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelsignin.Location = new System.Drawing.Point(130, 23);
+            this.labelsignin.Name = "labelsignin";
+            this.labelsignin.Size = new System.Drawing.Size(82, 38);
+            this.labelsignin.TabIndex = 0;
+            this.labelsignin.Text = "SignIn";
             // 
-            // register
+            // btnexit
             // 
-            this.register.Location = new System.Drawing.Point(323, 372);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(145, 23);
-            this.register.TabIndex = 7;
-            this.register.Text = "Click here to Register";
-            this.register.UseVisualStyleBackColor = true;
+            this.btnexit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnexit.Location = new System.Drawing.Point(202, 334);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 7;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // btnback
+            // 
+            this.btnback.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnback.Location = new System.Drawing.Point(24, 334);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(75, 23);
+            this.btnback.TabIndex = 8;
+            this.btnback.Text = "Back";
+            this.btnback.UseVisualStyleBackColor = true;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // SignIn_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Coffee_Shop_Management_System.Properties.Resources.registration1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.register);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.back);
-            this.Controls.Add(this.signin);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Name = "SignIn_Form";
             this.Text = "SignIn_Form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignIn_Form_FormClosed);
+            this.Load += new System.EventHandler(this.SignIn_Form_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button signin;
-        private System.Windows.Forms.Button back;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button register;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonsign;
+        private System.Windows.Forms.TextBox txtmail;
+        private System.Windows.Forms.Label labelpass;
+        private System.Windows.Forms.Label labelemail;
+        private System.Windows.Forms.Label labelsignin;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Button btnexit;
+        private System.Windows.Forms.Button btnback;
     }
 }

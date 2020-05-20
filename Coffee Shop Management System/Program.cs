@@ -16,7 +16,8 @@ namespace Coffee_Shop_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Salesman_Information());
+            Application.Run(new Waiter_Information());
+
         }
     }
 }

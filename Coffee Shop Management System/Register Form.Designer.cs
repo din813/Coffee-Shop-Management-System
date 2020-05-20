@@ -29,94 +29,99 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.register = new System.Windows.Forms.Button();
-            this.cancel = new System.Windows.Forms.Button();
+            this.fname = new System.Windows.Forms.Label();
+            this.lblphonereg = new System.Windows.Forms.Label();
+            this.lblmailreg = new System.Windows.Forms.Label();
+            this.lblpassreg = new System.Windows.Forms.Label();
+            this.lblcpassreg = new System.Windows.Forms.Label();
+            this.btnregister = new System.Windows.Forms.Button();
+            this.btnexit = new System.Windows.Forms.Button();
             this.clicklog = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtfname = new System.Windows.Forms.TextBox();
+            this.txtlname = new System.Windows.Forms.TextBox();
+            this.txtphonereg = new System.Windows.Forms.TextBox();
+            this.txtpassreg = new System.Windows.Forms.TextBox();
+            this.txtcpassreg = new System.Windows.Forms.TextBox();
+            this.lname = new System.Windows.Forms.Label();
+            this.txtmailreg = new System.Windows.Forms.TextBox();
+            this.lbladdressreg = new System.Windows.Forms.Label();
+            this.txtaddressreg = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(396, 13);
+            this.label1.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(339, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.Size = new System.Drawing.Size(138, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "REGISTER FORM";
             // 
-            // label2
+            // fname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(226, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name : ";
+            this.fname.AutoSize = true;
+            this.fname.Location = new System.Drawing.Point(226, 56);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(66, 13);
+            this.fname.TabIndex = 1;
+            this.fname.Text = "First Name : ";
             // 
-            // label3
+            // lblphonereg
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(226, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Phone Number :";
+            this.lblphonereg.AutoSize = true;
+            this.lblphonereg.Location = new System.Drawing.Point(226, 127);
+            this.lblphonereg.Name = "lblphonereg";
+            this.lblphonereg.Size = new System.Drawing.Size(84, 13);
+            this.lblphonereg.TabIndex = 2;
+            this.lblphonereg.Text = "Phone Number :";
             // 
-            // label4
+            // lblmailreg
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 124);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "E-Mail :";
+            this.lblmailreg.AutoSize = true;
+            this.lblmailreg.Location = new System.Drawing.Point(226, 162);
+            this.lblmailreg.Name = "lblmailreg";
+            this.lblmailreg.Size = new System.Drawing.Size(42, 13);
+            this.lblmailreg.TabIndex = 3;
+            this.lblmailreg.Text = "E-Mail :";
             // 
-            // label5
+            // lblpassreg
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(226, 158);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Password :";
+            this.lblpassreg.AutoSize = true;
+            this.lblpassreg.Location = new System.Drawing.Point(226, 201);
+            this.lblpassreg.Name = "lblpassreg";
+            this.lblpassreg.Size = new System.Drawing.Size(59, 13);
+            this.lblpassreg.TabIndex = 4;
+            this.lblpassreg.Text = "Password :";
             // 
-            // label6
+            // lblcpassreg
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(226, 191);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Confirm Password :";
+            this.lblcpassreg.AutoSize = true;
+            this.lblcpassreg.Location = new System.Drawing.Point(226, 236);
+            this.lblcpassreg.Name = "lblcpassreg";
+            this.lblcpassreg.Size = new System.Drawing.Size(97, 13);
+            this.lblcpassreg.TabIndex = 5;
+            this.lblcpassreg.Text = "Confirm Password :";
             // 
-            // register
+            // btnregister
             // 
-            this.register.Location = new System.Drawing.Point(606, 191);
-            this.register.Name = "register";
-            this.register.Size = new System.Drawing.Size(75, 23);
-            this.register.TabIndex = 6;
-            this.register.Text = "Register";
-            this.register.UseVisualStyleBackColor = true;
-            this.register.Click += new System.EventHandler(this.register_Click);
+            this.btnregister.Location = new System.Drawing.Point(606, 191);
+            this.btnregister.Name = "btnregister";
+            this.btnregister.Size = new System.Drawing.Size(75, 23);
+            this.btnregister.TabIndex = 6;
+            this.btnregister.Text = "Register";
+            this.btnregister.UseVisualStyleBackColor = true;
+            this.btnregister.Click += new System.EventHandler(this.register_Click);
             // 
-            // cancel
+            // btnexit
             // 
-            this.cancel.Location = new System.Drawing.Point(12, 415);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(75, 23);
-            this.cancel.TabIndex = 7;
-            this.cancel.Text = "Cancel";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.btnexit.Location = new System.Drawing.Point(697, 415);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 7;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // clicklog
             // 
@@ -126,78 +131,102 @@
             this.clicklog.TabIndex = 8;
             this.clicklog.Text = "Click here to Log In";
             this.clicklog.UseVisualStyleBackColor = true;
-            this.clicklog.Click += new System.EventHandler(this.clicklog_Click);
             // 
-            // textBox1
+            // txtfname
             // 
-            this.textBox1.Location = new System.Drawing.Point(332, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtfname.Location = new System.Drawing.Point(332, 56);
+            this.txtfname.Name = "txtfname";
+            this.txtfname.Size = new System.Drawing.Size(185, 20);
+            this.txtfname.TabIndex = 9;
             // 
-            // textBox2
+            // txtlname
             // 
-            this.textBox2.Location = new System.Drawing.Point(332, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtlname.Location = new System.Drawing.Point(332, 88);
+            this.txtlname.Name = "txtlname";
+            this.txtlname.Size = new System.Drawing.Size(185, 20);
+            this.txtlname.TabIndex = 10;
             // 
-            // textBox3
+            // txtphonereg
             // 
-            this.textBox3.Location = new System.Drawing.Point(331, 124);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtphonereg.Location = new System.Drawing.Point(331, 124);
+            this.txtphonereg.Name = "txtphonereg";
+            this.txtphonereg.Size = new System.Drawing.Size(186, 20);
+            this.txtphonereg.TabIndex = 11;
             // 
-            // textBox4
+            // txtpassreg
             // 
-            this.textBox4.Location = new System.Drawing.Point(331, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(186, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtpassreg.Location = new System.Drawing.Point(331, 198);
+            this.txtpassreg.Name = "txtpassreg";
+            this.txtpassreg.Size = new System.Drawing.Size(186, 20);
+            this.txtpassreg.TabIndex = 12;
             // 
-            // textBox5
+            // txtcpassreg
             // 
-            this.textBox5.Location = new System.Drawing.Point(331, 188);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 20);
-            this.textBox5.TabIndex = 13;
+            this.txtcpassreg.Location = new System.Drawing.Point(331, 233);
+            this.txtcpassreg.Name = "txtcpassreg";
+            this.txtcpassreg.Size = new System.Drawing.Size(186, 20);
+            this.txtcpassreg.TabIndex = 13;
             // 
-            // tableLayoutPanel1
+            // lname
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(177, 237);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(390, 100);
-            this.tableLayoutPanel1.TabIndex = 14;
+            this.lname.AutoSize = true;
+            this.lname.Location = new System.Drawing.Point(226, 91);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(67, 13);
+            this.lname.TabIndex = 14;
+            this.lname.Text = "Last Name : ";
+            // 
+            // txtmailreg
+            // 
+            this.txtmailreg.Location = new System.Drawing.Point(331, 162);
+            this.txtmailreg.Name = "txtmailreg";
+            this.txtmailreg.Size = new System.Drawing.Size(186, 20);
+            this.txtmailreg.TabIndex = 15;
+            // 
+            // lbladdressreg
+            // 
+            this.lbladdressreg.AutoSize = true;
+            this.lbladdressreg.Location = new System.Drawing.Point(226, 277);
+            this.lbladdressreg.Name = "lbladdressreg";
+            this.lbladdressreg.Size = new System.Drawing.Size(51, 13);
+            this.lbladdressreg.TabIndex = 16;
+            this.lbladdressreg.Text = "Address :";
+            // 
+            // txtaddressreg
+            // 
+            this.txtaddressreg.Location = new System.Drawing.Point(332, 270);
+            this.txtaddressreg.Name = "txtaddressreg";
+            this.txtaddressreg.Size = new System.Drawing.Size(186, 20);
+            this.txtaddressreg.TabIndex = 17;
             // 
             // Register_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtaddressreg);
+            this.Controls.Add(this.lbladdressreg);
+            this.Controls.Add(this.txtmailreg);
+            this.Controls.Add(this.lname);
+            this.Controls.Add(this.txtcpassreg);
+            this.Controls.Add(this.txtpassreg);
+            this.Controls.Add(this.txtphonereg);
+            this.Controls.Add(this.txtlname);
+            this.Controls.Add(this.txtfname);
             this.Controls.Add(this.clicklog);
-            this.Controls.Add(this.cancel);
-            this.Controls.Add(this.register);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnexit);
+            this.Controls.Add(this.btnregister);
+            this.Controls.Add(this.lblcpassreg);
+            this.Controls.Add(this.lblpassreg);
+            this.Controls.Add(this.lblmailreg);
+            this.Controls.Add(this.lblphonereg);
+            this.Controls.Add(this.fname);
             this.Controls.Add(this.label1);
             this.Name = "Register_Form";
             this.Text = "Register_Form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_Form_FormClosed);
+            this.Load += new System.EventHandler(this.Register_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,19 +235,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button register;
-        private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Label fname;
+        private System.Windows.Forms.Label lblphonereg;
+        private System.Windows.Forms.Label lblmailreg;
+        private System.Windows.Forms.Label lblpassreg;
+        private System.Windows.Forms.Label lblcpassreg;
+        private System.Windows.Forms.Button btnregister;
+        private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.Button clicklog;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TextBox txtfname;
+        private System.Windows.Forms.TextBox txtlname;
+        private System.Windows.Forms.TextBox txtphonereg;
+        private System.Windows.Forms.TextBox txtpassreg;
+        private System.Windows.Forms.TextBox txtcpassreg;
+        private System.Windows.Forms.Label lname;
+        private System.Windows.Forms.TextBox txtmailreg;
+        private System.Windows.Forms.Label lbladdressreg;
+        private System.Windows.Forms.TextBox txtaddressreg;
     }
 }
